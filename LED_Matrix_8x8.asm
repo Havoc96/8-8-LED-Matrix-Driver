@@ -12,11 +12,11 @@ _main:
 	CLRF        PORTD+0 
 ;LED_Matrix_8x8.c,7 :: 		while(1){
 L_main0:
-;LED_Matrix_8x8.c,8 :: 		PORTC = 0b11111110;
-	MOVLW       254
+;LED_Matrix_8x8.c,8 :: 		PORTC = 0b01111111;
+	MOVLW       127
 	MOVWF       PORTC+0 
-;LED_Matrix_8x8.c,9 :: 		PORTD = 0b11111111;
-	MOVLW       255
+;LED_Matrix_8x8.c,9 :: 		PORTD = 0b01111111;
+	MOVLW       127
 	MOVWF       PORTD+0 
 ;LED_Matrix_8x8.c,10 :: 		delay_ms(1);
 	MOVLW       6
@@ -29,11 +29,11 @@ L_main2:
 	DECFSZ      R12, 1, 1
 	BRA         L_main2
 	NOP
-;LED_Matrix_8x8.c,12 :: 		PORTC = 0b11111101;
-	MOVLW       253
+;LED_Matrix_8x8.c,12 :: 		PORTC = 0b10111111;
+	MOVLW       191
 	MOVWF       PORTC+0 
-;LED_Matrix_8x8.c,13 :: 		PORTD = 0b00011000;
-	MOVLW       24
+;LED_Matrix_8x8.c,13 :: 		PORTD = 0b11111111;
+	MOVLW       255
 	MOVWF       PORTD+0 
 ;LED_Matrix_8x8.c,14 :: 		delay_ms(1);
 	MOVLW       6
@@ -46,11 +46,11 @@ L_main3:
 	DECFSZ      R12, 1, 1
 	BRA         L_main3
 	NOP
-;LED_Matrix_8x8.c,16 :: 		PORTC = 0b11111011;
-	MOVLW       251
+;LED_Matrix_8x8.c,16 :: 		PORTC = 0b11011111;
+	MOVLW       223
 	MOVWF       PORTC+0 
-;LED_Matrix_8x8.c,17 :: 		PORTD = 0b00100100;
-	MOVLW       36
+;LED_Matrix_8x8.c,17 :: 		PORTD = 0b11001100;
+	MOVLW       204
 	MOVWF       PORTD+0 
 ;LED_Matrix_8x8.c,18 :: 		delay_ms(1);
 	MOVLW       6
@@ -63,11 +63,11 @@ L_main4:
 	DECFSZ      R12, 1, 1
 	BRA         L_main4
 	NOP
-;LED_Matrix_8x8.c,20 :: 		PORTC = 0b11110111;
-	MOVLW       247
+;LED_Matrix_8x8.c,20 :: 		PORTC = 0b11101111;
+	MOVLW       239
 	MOVWF       PORTC+0 
-;LED_Matrix_8x8.c,21 :: 		PORTD = 0b01000010;
-	MOVLW       66
+;LED_Matrix_8x8.c,21 :: 		PORTD = 0b11111111;
+	MOVLW       255
 	MOVWF       PORTD+0 
 ;LED_Matrix_8x8.c,22 :: 		delay_ms(1);
 	MOVLW       6
@@ -80,11 +80,11 @@ L_main5:
 	DECFSZ      R12, 1, 1
 	BRA         L_main5
 	NOP
-;LED_Matrix_8x8.c,24 :: 		PORTC = 0b11101111;
-	MOVLW       239
+;LED_Matrix_8x8.c,24 :: 		PORTC = 0b11110111;
+	MOVLW       247
 	MOVWF       PORTC+0 
-;LED_Matrix_8x8.c,25 :: 		PORTD = 0b10000001;
-	MOVLW       129
+;LED_Matrix_8x8.c,25 :: 		PORTD = 0b01111111;
+	MOVLW       127
 	MOVWF       PORTD+0 
 ;LED_Matrix_8x8.c,26 :: 		delay_ms(1);
 	MOVLW       6
