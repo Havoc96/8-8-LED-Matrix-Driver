@@ -28,37 +28,16 @@ char LetterA[5] = {0b00111111, 0b01000100, 0b01000100, 0b01000100, 0b00111111},
      ;
 
 void Display(char Letter[]){
-    /*char i, multiplexer = 0b01111111;
-    PORTC = multiplexer;
+    char i;
     
     for(i=0; i<5; i++){
-        multiplexer = multiplexer >> 1;
-        PORTC = (multiplexer | 0b10000000);
+        PORTC = 0xFF;
+        PORTC &= ~(1<<(7-i));
         PORTD = Letter[i];
-        delay_ms(50);
+        delay_ms(1);
+
     
-    }*/
-    
-    PORTC = 0b01111111;
-    PORTD = Letter[0];
-    delay_ms(1);
-
-    PORTC = 0b10111111;
-    PORTD = Letter[1];
-    delay_ms(1);
-
-    PORTC = 0b11011111;
-    PORTD = Letter[2];
-    delay_ms(1);
-
-    PORTC = 0b11101111;
-    PORTD = Letter[3];
-    delay_ms(1);
-
-    PORTC = 0b11110111;
-    PORTD = Letter[4];
-    delay_ms(1);
-
+    }
 }
 
 void main() {
